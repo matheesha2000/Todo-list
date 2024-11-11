@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid'
 import Todo from './Todo'
 
 const TodoList = () => {
-  const [todoValue, setTodo] = useState([])
+  const [todoValue, setTodo] = useState('')
 
   const createTodo = (todo) => {
     setTodo([...todoValue, { id: uuidv4(), task: todo, isEditing: false }])
